@@ -1,0 +1,75 @@
+.toy-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 100%;
+    @include for-normal-layout {
+        flex: 0 0 49%;
+    }
+    @include for-wide-layout {
+        flex: unset;
+    }
+    h3,
+    p {
+        margin: 0;
+    }
+    img {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        height: 200px;
+    }
+    .img-preview-container {
+        position: relative;
+        overflow: hidden;
+
+        button {
+            color: #333;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: larger;
+            transition: 0.7s;
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+
+    .ribbon {
+        margin: 0;
+        padding: 0;
+        background: rebeccapurple;
+        color: white;
+        padding: 0.35em 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(30%) translateY(0%) rotate(45deg);
+        transform-origin: top left;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            margin: 0 -1px;
+            /* tweak */
+            width: 100%;
+            height: 100%;
+            background: rebeccapurple;
+        }
+        &::before {
+            right: 100%;
+        }
+        &::after {
+            left: 100%;
+        }
+    }
+    .toy-labels span {
+        background-color: rgb(253, 253, 253);
+        margin: 5px;
+        padding: 5px;
+        border-radius: 0.5em;
+        border: 1.7px solid;
+    }
+}

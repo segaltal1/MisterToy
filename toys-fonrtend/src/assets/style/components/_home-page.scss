@@ -1,0 +1,63 @@
+.home-page {
+    position: relative;
+    .main-text {
+        p {
+            margin: unset;
+            font-family: deadmobil, serif;
+            font-size: xx-large;
+            left: 14%;
+            position: absolute;
+            top: 5%;
+            white-space: nowrap;
+            overflow: hidden;
+            color: rgba(255, 255, 255, 0.7);
+            animation: animated-text 2s steps(30, end) 1s 1 normal both;
+            @include for-mobile-layout {
+                animation: unset;
+                margin: unset;
+                left: 10%;
+            }
+            @include for-normal-layout {
+                top: 15%;
+                font-size: xxx-large;
+
+            }
+            & + p {
+                @include for-normal-layout {
+                    top: 15%;
+                    margin-top: 2.2em;
+                }
+                animation-delay: 2.2s;
+                top: 10%;
+            }
+        }
+    }
+    h1 {
+        margin: 1em;
+    }
+    .cards-img {
+        gap: 2em;
+        @include for-normal-layout {
+            flex-direction: row;
+        }
+        > * {
+            @include for-normal-layout {
+                height: 200px;
+            }
+            height: 260px;
+        }
+    }
+
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 472px;
+        }
+    }
+}
+
+.no-result {
+    width: 50%;
+}

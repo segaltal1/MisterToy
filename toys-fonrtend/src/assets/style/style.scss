@@ -1,0 +1,28 @@
+/* / Setup */
+@import "setup/variables.scss";
+/* @import "setup/functions.scss"; */
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+/* Basics */
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+/* @import "basics/buttons.scss"; */
+
+/* Components */
+@import "components/main-header";
+@import "components/home-page";
+@import "components/user-msg";
+@import "components/toy-list";
+@import "components/toy-preview";
+@import "components/toy-filter";
+@import "components/toy-details";
+@import "components/toy-edit";
+@import "components/pop-up";
+@import "components/chart-toy";
+@import "components/toy-map";
+@import "components/chat-app";
+@import "components/login";
+@import "components/user-details";
+@import "components/add-toy";

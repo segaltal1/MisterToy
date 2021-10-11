@@ -1,0 +1,26 @@
+.user-details {
+    h1 {
+        margin: 0;
+        padding: 1rem;
+        font-size: xx-large;
+    }
+    .user-comments {
+        & > * {
+            padding: 0.25em;
+            border-radius: 0.25em;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: gainsboro;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .review-admin-btn{
+        position: fixed;
+        right: 2%;
+        top: 20%;
+        @include for-normal-layout{
+            right: 20%;
+        }
+    }
+}

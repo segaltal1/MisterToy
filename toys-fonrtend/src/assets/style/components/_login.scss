@@ -1,0 +1,19 @@
+.login-page {
+    .login-section {
+        padding: 2rem;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .btn-signup {
+            transition: transform 0.7s;
+            color: darken($clr5, 40%);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

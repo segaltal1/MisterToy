@@ -1,0 +1,32 @@
+.my-popup {
+    background: white;
+    margin: 0;
+    padding: 0.6em;
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    main {
+        height: 200px;
+        width: 200px;
+        overflow: auto;
+    }
+    header {
+        justify-content: space-between;
+        gap: 10px;
+        background: transparent;
+        button{
+            font-weight: 600;
+        }
+    }
+    footer {
+        margin: 0;
+        background: transparent;
+        padding: 0;
+    }
+}
+

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family:   sans-serif;
+    line-height: 1.75;
+    color: $clr2;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    margin: 0 0 2rem;
+}
+
+h1{
+    font-family: deadmobil, serif;
+    color: darken($clr6,25%) ;
+}
+
+a{
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+// p {
+//     margin: 0 0 2rem;
+//     max-width: 46ch;
+// }

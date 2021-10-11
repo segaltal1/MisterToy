@@ -1,0 +1,30 @@
+.main-container {
+    max-width: 440px;
+    margin: 0 auto;
+    
+    @include for-normal-layout {
+        max-width: 700px;
+    }
+    @include for-wide-layout {
+        max-width: 960px;
+    }
+    // @include for-narrow-layout {
+    //     max-width: 940px ;
+    // }
+
+    //     @include for-normal-layout {
+    //         grid-template-columns:
+    //         1fr
+    //         minmax(auto, $narrow-breakpoint)
+    //         1fr;
+    //     }
+
+    //     @include for-wide-layout {
+    //         grid-template-columns:
+    //         1fr
+    //         minmax(auto, $normal-breakpoint)
+    //         1fr;
+    //     }
+}
+
+// Main Header Layout

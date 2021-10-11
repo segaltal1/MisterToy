@@ -1,0 +1,106 @@
+.main-header {
+    background-color: $clr5;
+    .header-content {
+        .hamburger-react {
+            visibility: show;
+            // position: absolute;
+            @include for-normal-layout {
+                visibility: hidden;
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .main-nav {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 5.2rem;
+            z-index: 2;
+            transform: translateX(100%);
+            transition: 0.55s ease-out;
+
+            &.open {
+                transform: translateX(0);
+                background-color: #f2f2f2;
+                box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            }
+
+            @include for-normal-layout {
+                flex-direction: row;
+                height: unset;
+                transform: translateX(0);
+                top: unset;
+                position: unset;
+                padding: unset;
+            }
+            @include for-wide-layout {
+                flex-direction: row;
+            }
+            a {
+                padding: 0.8em 2em;
+                box-shadow: inset rgba(0, 0, 0, 0.3) 0px -2px 0;
+
+                // padding: 1em 0.5em;
+                transition: box-shadow 0.6s;
+                // font-size: 1.4em;
+                color: lighten($clr2, 5%);
+                @include for-normal-layout {
+                    font-size: 1.1em;
+                    padding: 1.5em 0.5em;
+                    box-shadow: unset;
+                }
+                @include for-wide-layout {
+                    font-size: 1.4em;
+                    padding: 1em 0.5em;
+                    box-shadow: unset;
+                }
+                &:hover {
+                    box-shadow: inset rgba(0, 0, 0, 0.3) 0px -4px 0;
+                }
+                &:active {
+                    color: $clr6;
+                }
+                &.user-link {
+                    // position: fixed;
+                    box-shadow: none;
+                    padding: 0;
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .user-info {
+                order: -1;
+
+                padding: 0.5em;
+                & > :first-child {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .logo {
+        mix-blend-mode: multiply;
+        margin: 0;
+        cursor: pointer;
+        font-size: 3em;
+    }
+}
+
+// .screen {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgb(0 0 0 / 50%);
+//     cursor: pointer;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: opacity .6s;
+// }

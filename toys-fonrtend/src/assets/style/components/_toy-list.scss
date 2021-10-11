@@ -1,0 +1,7 @@
+.toys-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    @include for-wide-layout{
+        justify-content: space-around;
+    }
+}

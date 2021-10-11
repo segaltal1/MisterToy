@@ -1,0 +1,39 @@
+.filter-toy {
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    @include for-normal-layout{
+        flex-direction: row-reverse;
+    }
+    .filter-top-row {
+        gap: 1em;
+        padding: 0.5em;
+
+    }
+    input[name="price"] {
+        max-width: 100px;
+    }
+
+    #sort-by {
+        min-width: 100px;
+    }
+
+    .multi-select {
+        // width: 50%;
+        .basic-multi-select{
+            min-width: 200px
+        }
+    }
+}
+
+// input[name="price"] {
+//     max-width: 100px;
+// }
+
+// #sort-by {
+//     min-width: 100px;
+// }
+
+// .multi-select {
+//     width: 50%;
+// }
