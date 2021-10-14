@@ -30,6 +30,9 @@ HTML5 & CSS3 & SASS & JS & React & Redux
  <img src="https://i.im.ge/2021/10/14/ory0Vc.jpg"/> 
 
 ## Toys Page
+- view all toys
+- add, delete and edit toys
+- search and filter toys
 <img src="https://i.im.ge/2021/10/14/ory9rL.jpg"/>
 
 ---
