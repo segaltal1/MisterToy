@@ -1,5 +1,34 @@
-### Mistertoy, a market place of toys, build the app with React.js. I wrote this application as a project in my Coding Academy bootcamp.
+Mistertoy
+Market-place of toys, build the app with React.js.
 
-## Herokuapp You can see the app at the following link: [GitHub Pages](https://frozen-temple-35610.herokuapp.com/) Or copy this link `https://frozen-temple-35610.herokuapp.com/` ## Languages HTML5 & CSS3 & SASS & JS & React & Redux
-## Libraries and more Node libraries React.js - Build the app Redux - Build the State management Sass - to design the app
-## Project setup ``` npm install ``` ### Compiles and minifies for production ``` npm run build ```
+The app written as part of my studies on the bootcamp of coding academy.
+
+Herokuapp
+You can see the app at the following link: Toy-Market
+
+Or copy this link
+
+https://frozen-temple-35610.herokuapp.com/
+
+Languages
+HTML5 & CSS3 & SASS & JS & React & Redux
+
+Tools
+React.js - Build the app
+
+Redux - Build the State management
+
+Sockets - View real time update
+
+Sass - to design the app
+
+Home
+
+Toys Page
+
+Project setup
+npm install
+Compiles and hot-reloads for development
+npm run server
+Compiles and minifies for production
+npm run build
